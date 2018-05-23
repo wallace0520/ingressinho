@@ -1,0 +1,450 @@
+body{
+	background-color: #e8e8e8;
+	margin: 0 auto;
+	padding: 0 auto;
+	font-family: arial;
+
+}
+
+
+button,input{
+	outline: none;
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+#conteiner-topo{
+	width: 100%;
+	float: left;
+	background-color: white;
+
+}
+
+
+.logotipo-topo{
+	position: relative;
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	float: left;
+}
+
+.login-topo{
+	float: right;
+	margin-right: 20px;
+	margin-top: 27px;
+}
+
+#btn-login{
+	width:80px;
+	height: 30px;
+	background-color: #E73D81;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	font-weight: normal;
+}
+
+
+#btn-login  .fas{
+	color:white;
+}
+
+#fechar-menu-responsivo{
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+	color:white;
+}
+
+#fechar-menu-responsivo .fas{
+	color:white;
+	cursor: pointer;
+}
+
+
+#login-responsivo{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	z-index: 999;
+	display: none;
+
+	
+}
+
+.box-login{
+	position: relative;
+	left: 50%;
+	margin-left: -35%;
+	margin-top:180px;
+	width: 70%;
+	float: left;
+	background-color: white;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	max-width: 320px;
+
+}
+
+.informacoes-login{
+	width: 90%;
+	position: relative;
+	left: 50%;
+	margin-left: -45%;
+	float: left;
+}
+
+.email-acesso,.senha-acesso{
+	width: 100%;
+	height: 35px;
+	margin-top: 10px;
+	border-radius: 3px;
+	border: 1px solid #706E6E;
+	color: #706E6E;
+	float: left;
+}
+
+.btn-acesso{
+	width: 100%;
+	position: relative;
+	left: 50%;
+	margin-left: -50%;
+	background-color: #E73D81;
+	border: none;
+	height: 35px;
+	font-size: 1em;
+	color: white;
+	font-weight: bolder;
+	margin-top: 10px;
+	border-radius: 3px;
+	float: left;
+}
+
+.checkbox-login {
+	float: left;
+	display: inline;
+
+	
+}
+
+.box-checkbox{
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+
+.filtro-basico-topo{
+	float: left;
+	width: 100%;
+}
+
+.texto-checkbox{
+	margin-left: 7px;
+	line-height: 20.5px;
+	font-size: 0.8em;
+	color: #706E6E;
+}
+
+.linha-login{
+	border: 0.5px solid #706E6E;
+	margin-top: 170px;
+}
+
+
+.btn-filtro-basico{
+	border: none;
+	width: 25%;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #D12E6F;
+}
+
+.cadastrese{
+	color:#E73D81;
+	font-size: 0.9em;
+	
+}
+
+.esqueci-senha{
+	color:#3498DB;
+	font-size: 0.9em;
+
+}
+
+.btn-filtro-basico h1{
+	text-align: center;
+	font-size: 0.9em;
+	line-height: 5px;
+	color: white;
+	margin-left: 2.1px;
+}
+
+.segunda-cor{
+	background-color: #E73D81;
+}
+
+#slide{
+	width: 100%;
+	float: left;
+	background-image: url("../img/background-slide.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+.evento-slide{
+	position: relative;
+	left: 50%;
+	margin-left: -45%;
+	width: 90%;
+	height: auto;
+	background-color: transparent;
+	background:linear-gradient( to top, black, transparent),url("../img/teste-img.jpg")  ;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	float: left;
+	color: white ;
+	transition:1s;
+
+}
+
+.evento-slide h2{
+	color:white !important;
+
+}
+
+.evento-slide:hover{
+	background-size: 120% 120%;
+	background-position: center;
+	trasition:1s;
+}
+
+
+.evento-slide h1{
+	margin-top: 200px;
+
+}
+
+.evento-slide h2{
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 9px;
+	color: white;
+}	
+
+ .far,.fas{
+	color:#E73D81;
+}
+
+#sessao-principal{
+	float: left;
+	width: 100%;
+	
+}
+
+hr {
+	width: 80%;
+	border: 2px solid #E73D81;
+	margin-top: -15px;
+	}
+
+#sessao-principal h1{
+	color:#3498DB;
+	text-align: center;
+
+}
+
+.bloco-evento{
+	width:90%;
+	position: relative;
+	left: 50%;
+	margin-left: -45%;
+	background-color: white;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+
+}
+
+.imagem-evento img{
+	width: 90%;
+	position: relative;
+	left: 50%;
+	margin-left: -45%;
+	padding-top: 15px;
+
+}
+
+.texto-evento{
+	width: 90%;
+	position: relative;
+	left: 50%;
+	margin-left: -45%;
+}
+
+.texto-evento h1,h2{
+	color: black !important;
+	text-align: left !important;
+}
+
+.texto-evento h1{
+	font-size: 1.5em;
+	margin-left: 0px;
+}
+
+.texto-evento h2{
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.texto-evento .far,.fas{
+	margin-left: 0px;
+}
+
+.btn-saber-mais{
+	width: 90%;
+	height: 50px;
+	position: relative;
+	left: 50%;
+	margin-left: -45%;
+	background-color: #E73D81;
+	border: none;
+	border-bottom: 5px solid #A61B52;
+	border-radius: 3px;
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+	transition:1s;
+}
+
+.btn-saber-mais:hover{
+	transition:0.5s;
+	background-color: #A61B52;
+	border-bottom: 5px solid #E73D81;
+
+}
+
+#newsletter{
+	width: 100%;
+	float: left;
+	padding-bottom: 15px;
+	background:linear-gradient( to right, rgba(52,152,219,0.7), rgba(231,61,129,0.7)),url("../img/background-newsletter.jpg")  ;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#newsletter h1,h3{
+	color:white;
+	font-size: 1.1em;
+	text-align: left;
+	margin-left: 15px;
+
+}
+
+#newsletter h3{
+	font-size: 0.8em;
+	font-weight: normal;
+	margin-top:-10px;
+}
+
+#newsletter-email{
+	width: 90%;
+	height: 30px;
+	position: relative;
+	left: 50%;
+	margin-left: -45%;
+	float: left;
+	cursor: auto;
+}
+
+#newsletter-regiao{
+	width: 90%;
+	height: 30px;
+	position: relative;
+	left: 50%;
+	margin-left: -45%;
+	float: left;
+
+}
+
+#newsletter-enviar{
+	float: left;
+	position: relative;
+	left: 50%;
+	margin-left: -45%;
+	width: 90%;
+	height: 30px;
+	background-color: #E73D81;
+	border: none;
+	color:white;
+	font-weight: bolder;
+
+}
+
+select:hover { 
+	color: #E73D81;
+
+}
+
+#rodape-informacoes{
+	width: 100%;
+	background-color: #E73D81;
+	float: left;
+}
+
+.bloco-informacoes{
+	position: relative;
+	left: 50%;
+	margin-left: -45%;
+	width: 90%;
+	padding-top: 10px;
+	text-align: left;
+}
+
+.bloco-informacoes h1{
+	color: white !important;
+	font-size: 1.3em;
+	text-align: left !important;
+	margin-left: 0px;
+
+}
+
+.bloco-informacoes ul li{
+	list-style: none;
+	margin-left:-40px;
+	text-align: left;
+	color: white;
+	line-height: 25px;
+}
+
+#rodape{
+	width: 100%;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #3498DB;
+	float: left;
+	color: white;
+	font-size: 0.8em;
+}
+
+@media (min-width: 533px) {
+
+	.box-login{
+	margin-left: -160px;
+	width:320px;
+
+}
+
+	
+
+    }
