@@ -1,0 +1,511 @@
+<html lang="pt">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+		<script type="text/javascript">
+
+			 function mostrarMenu(){
+
+    if(document.getElementById('login-responsivo').style.display="none");
+    document.getElementById('login-responsivo').style.display="block";
+
+  } 
+
+  			 function fecharMenu(){
+
+    if(document.getElementById('login-responsivo').style.display="block");
+    document.getElementById('login-responsivo').style.display="none";
+
+  } 
+
+		</script>
+
+		<script language="JavaScript" type="text/javascript">
+
+							var vCont = 0;
+
+							function conta(){
+
+								vCont = vCont + 1;
+
+								document.getElementById('add').value = vCont;
+							}
+
+
+							var vCont = 0;
+
+							function subtracao(){
+
+								vCont = vCont - 1;
+
+								document.getElementById('add').value = vCont;
+							}
+
+						</script>
+
+		<title>
+
+			Ingressinho
+
+		</title>
+
+	</head>
+
+	<body>
+
+
+ 				<div id="login-responsivo">
+
+ 					<div id="fechar-menu-responsivo" onclick="fecharMenu()">
+
+ 						<i class="fas fa-times"></i>
+
+ 					</div>
+
+ 					<div class="box-login">
+
+ 						<div class="informacoes-login">
+
+ 							<form action="#" id="acesso-login">
+
+ 								<input type="email" value="Insira o seu email" class="email-acesso">
+
+ 								<input type="password" value="123456789123456789" class="senha-acesso">
+
+ 								<div class="box-checkbox">
+
+									<input type="checkbox" class="checkbox-login" checked> <span class="texto-checkbox"> Ficar Conectado</span>
+
+								</div>
+
+ 								<button class="btn-acesso">
+
+									Entrar
+
+								</button>
+
+
+ 							</form>
+
+ 							<hr class="linha-login">
+
+ 								<a href="#" class="cadastrese">Cadastre-se<br></a>
+ 								<a href="#" class="esqueci-senha">Esqueci a Senha</a>
+
+ 							</span>
+
+ 						</div>
+
+ 					</div>
+
+ 				</div>
+
+		<header id="conteiner-topo">
+
+			<div class="logotipo-topo">
+
+				<a href="index.html">
+
+					<img src="img/logotipo-ingressinho.png">
+
+				</a>
+
+			</div>
+
+			<div class="busca-topo"> 	
+
+				<input type="search" value="Procurar por...">
+
+			</div>		
+
+			<div class="box-btn-procurar">	
+
+				<button class="btn-procurar"><i class="fas fa-search"></i> Procurar</button>
+
+			</div>
+
+
+			<div class="login-topo">
+
+				<button id="btn-login" onclick="mostrarMenu()">
+
+					<i class="fas fa-user-alt"></i> Entrar
+
+ 				</button>
+
+
+			</div>
+
+			<div class="filtro-basico-topo">
+
+				<button class="btn-filtro-basico">
+
+					<img src="img/btn-circo.png">
+
+				<h1>Circo</h1>
+
+				</button>
+
+					<button class="btn-filtro-basico segunda-cor">
+
+					<img src="img/btn-teatro.png">
+
+				<h1>Teatro</h1>
+
+				</button>
+
+					<button class="btn-filtro-basico">
+
+					<img src="img/btn-show.png">
+
+				<h1>Shows</h1>
+
+				</button>
+
+					<button class="btn-filtro-basico segunda-cor">
+
+					<img src="img/btn-ingresso.png">
+
+				<h1>Ingressos</h1>
+
+				</button>
+
+			</div>
+
+		</header>
+
+		<header id="oferta">
+
+			<div class="background-oferta">
+
+				<h1>PICA-PICA SHOW</h1>
+
+			</div>
+
+			<div class="coluna-compra">
+
+				<div class="coluna-compra-box">
+
+					<div class="compra-data-informacoes">
+
+						<h1>ESCOLHA A DATA</h1>
+
+						<button class="botao-compra">
+
+							HOJE, 05/06/2018 ÀS 20H
+
+						</button>
+
+						<button class="botao-compra">
+
+							06/06/2018 ÀS 20H
+
+						</button>	
+
+						<button class="botao-compra">
+
+							07/06/2018 ÀS 20H
+
+						</button>	
+
+						<button class="botao-compra">
+
+							08/06/2018 ÀS 20H
+
+						</button>			
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="coluna-compra">
+
+				<div class="coluna-compra-box">
+
+					<div class="compra-data-informacoes">
+
+						<h1>ESCOLHA A QUANTIDADE</h1>
+
+						<div class="ingresso-inteira">
+
+
+
+							<input type="text" class="ingressos-quantidade" id="add" placeholder="0"/>
+
+
+							<div class="ingressos-valor">
+
+								<h1>Inteira R$24</h1>
+								<h2>Sub Total R$0
+
+								</h2>
+
+							</div>
+
+							<div class="ingressos-botoes">
+
+								<input type="button" class="botao-add-sub" value="+" onclick="conta();" />
+								<input type="button" class="botao-add-sub" value="-" onclick="subtracao();" />
+
+							</div>
+
+						</div>
+
+						<div class="ingresso-inteira">
+
+
+
+							<input type="text" class="ingressos-quantidade" id="add" placeholder="0"/>
+
+
+							<div class="ingressos-valor">
+
+								<h1>Meia R$12</h1>
+								<h2>Sub Total R$0
+
+								</h2>
+
+							</div>
+
+							<div class="ingressos-botoes">
+
+								<input type="button" class="botao-add-sub" value="+" onclick="conta();" />
+								<input type="button" class="botao-add-sub" value="-" onclick="subtracao();" />
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+				<div class="coluna-compra">
+
+					<div class="coluna-compra-box">
+
+						<div class="compra-data-informacoes">
+
+							<h1>RESUMO</h1>
+
+							<table id="tabela-resumo-compra">
+
+								<tr>
+
+									<td>1</td>
+
+									<td>Inteiras:</td>
+
+									<td>R$24</td>
+
+								</tr>
+
+								<tr>
+
+									<td>2</td>
+
+									<td>Meias:</td>
+
+									<td>R$24</td>
+
+								</tr>
+
+								<tr>
+
+									<td colspan="2">Descontos:</td>
+
+									<td>R$0</td>
+
+								</tr>
+
+								<tr>
+
+									<td colspan="2"><strong>Total:</strong></td>
+
+									<td><strong>R$48</strong></td>
+
+
+								</tr>
+
+							</table>
+
+							<button class="ok-comprar">
+
+								OK! Comprar
+
+							</button>
+
+						</div>
+
+					</div>
+
+				</div>
+
+		</header>
+
+		<header id="informacoes">
+
+			<div class="coluna-informacoes">
+
+				<div class="coluna-informacoes-box">
+
+					<img src="img/teste-img.jpg">
+
+					<h1>PICA-PICA SHOW</h1>
+
+					<h2> <i class="far fa-calendar-alt"></i> 21/05/2018</h2>
+					<h2> <i class="far fa-clock"></i> 20:00h</h2>
+					<h2> <i class="fas fa-map-marker-alt"></i> Tijuca Tênis Clube - Tijuca</h2>
+
+					<div class="coluna-informacoes-sinopsia-regras">
+
+						<h1> Sinopsia</h1>
+
+						<p>
+
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+						</p>
+
+						<h1> Regras</h1>
+
+						<p>
+
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+						</p>
+
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</header>	
+
+		
+
+		<section id="newsletter">
+
+			<div class="box-newsletter">
+
+			<h1>RECEBA NOSSAS NOVIDADES</h1>
+			<h3>Receba em primeira mão todas as novidades que estão rolando na sua região.</h3>
+
+			<form action="get" id="newsletter-form">
+
+				<input type="email" placeholder="Digite o seu melhor email" id="newsletter-email" />
+
+			
+
+				<select name="regiao" id="newsletter-regiao">
+
+ 					<option value="qual">Qual é a sua região?</option>
+
+ 					<option value="Zona Sul">Zona Sul</option>
+
+  					<option value="Zona Norte">Zona Norte</option>
+
+  					<option value="Zona Oeste">Zona Oeste</option>
+
+  					<option value="Baixada Fluminense">Baixada Fluminense</option>
+
+				</select>
+
+		
+
+				<button id="newsletter-enviar">
+
+					ASSINAR
+
+				</button>
+
+			</form>
+
+			</div>
+
+		</section>
+
+		<footer id="rodape-informacoes">
+
+			<div class="box-bloco-informacoes">
+
+			<div class="bloco-informacoes">
+
+				<h1>Institucional</h1>
+
+				<ul>
+
+					<a href="#"><li>Sobre</li></a>
+					<a href="#"><li>Blog</li></a>
+					<a href="#"><li>Facebook</li></a>
+					<a href="#"><li>Instagram</li></a>
+					<a href="#"><li>Youtube</li></a>
+					
+
+				</ul>
+
+			</div>
+
+			<div class="bloco-informacoes">
+
+					<h1>Parceria</h1>
+
+				<ul>
+
+					<a href="#"><li>Seja um Parceiro</li></a>
+					<a href="#"><li>Painel do Parceiro</li></a>
+	
+				</ul>
+
+			</div>
+
+			<div class="bloco-informacoes">
+
+					<h1>Institucional</h1>
+
+				<ul>
+
+					<a href="#"><li>Dúvidas Gerais</li></a>
+					<a href="#"><li>Fale Conosco</li></a>
+					<a href="#"><li>Fale Pelo Whatsapp</li></a>
+					<li>(21) 99899-0268</li>
+					<li>contato@ingressinho.com.br</li>
+					
+
+				</ul>
+
+			</div>
+
+			</div>
+
+		</footer>
+
+		<footer id="rodape">
+
+			© 2018 Andrely Produções - MEI. Todos os direitos reservados. CNPJ 14.888.897/0001-46
+
+
+
+		</footer>
+
+	</body>
+
+</html>
